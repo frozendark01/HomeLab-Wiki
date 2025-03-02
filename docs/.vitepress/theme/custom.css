@@ -1,0 +1,204 @@
+:root {
+  /* Base colors */
+  --vp-c-brand: #3a86ff;
+  --vp-c-brand-light: #4a94ff;
+  --vp-c-brand-lighter: #5aa2ff;
+  --vp-c-brand-dark: #2a78ff;
+  --vp-c-brand-darker: #1a6aff;
+  
+  /* Accent colors */
+  --vp-c-accent: #8338ec;
+  --vp-c-accent-light: #9349ed;
+  --vp-c-accent-lighter: #a35aee;
+  --vp-c-accent-dark: #7327db;
+  --vp-c-accent-darker: #6316ca;
+  
+  /* Text colors */
+  --vp-c-text-1: #2b2d42;
+  --vp-c-text-2: #4a4b61;
+  --vp-c-text-3: #8d99ae;
+  
+  /* Background colors */
+  --vp-c-bg: #f8f9fa;
+  --vp-c-bg-soft: #f0f2f5;
+  --vp-c-bg-mute: #e9ecef;
+  
+  /* Border colors */
+  --vp-c-border: #e9ecef;
+  --vp-c-divider: #e9ecef;
+  
+  /* Code block colors */
+  --vp-code-block-bg: #f8f9fa;
+  --vp-code-block-color: #2b2d42;
+  --vp-code-line-highlight-color: rgba(58, 134, 255, 0.1);
+  --vp-code-copy-code-hover-bg: rgba(58, 134, 255, 0.1);
+  
+  /* Button colors */
+  --vp-button-brand-bg: var(--vp-c-brand);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-light);
+  --vp-button-brand-active-bg: var(--vp-c-brand-dark);
+  
+  /* Custom colors */
+  --vp-c-success: #38b000;
+  --vp-c-warning: #ffbe0b;
+  --vp-c-danger: #ff006e;
+  
+  /* Custom properties */
+  --vp-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --vp-font-family-mono: 'JetBrains Mono', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  
+  /* Layout */
+  --vp-layout-max-width: 1440px;
+  
+  /* Component styles */
+  --vp-nav-height: 64px;
+  --vp-sidebar-width: 272px;
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #3a86ff, #8338ec);
+  --vp-home-hero-image-background-image: linear-gradient(to right, rgba(58, 134, 255, 0.2), rgba(131, 56, 236, 0.2));
+  --vp-home-hero-image-filter: blur(72px);
+}
+
+/* Dark mode overrides */
+.dark {
+  --vp-c-bg: #121212;
+  --vp-c-bg-soft: #1e1e1e;
+  --vp-c-bg-mute: #2a2a2a;
+  
+  --vp-c-text-1: #f8f9fa;
+  --vp-c-text-2: #e9ecef;
+  --vp-c-text-3: #adb5bd;
+  
+  --vp-c-border: #2a2a2a;
+  --vp-c-divider: #2a2a2a;
+  
+  --vp-code-block-bg: #1e1e1e;
+}
+
+/* Typography */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--vp-font-family-base);
+  color: var(--vp-c-text-1);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Custom components */
+.custom-block {
+  border-radius: 8px;
+  padding: 16px 16px 8px;
+  margin: 16px 0;
+}
+
+.custom-block.tip {
+  border-color: var(--vp-c-brand);
+  background-color: rgba(58, 134, 255, 0.1);
+}
+
+.custom-block.warning {
+  border-color: var(--vp-c-warning);
+  background-color: rgba(255, 190, 11, 0.1);
+}
+
+.custom-block.danger {
+  border-color: var(--vp-c-danger);
+  background-color: rgba(255, 0, 110, 0.1);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--vp-c-border);
+}
+
+th {
+  background-color: var(--vp-c-bg-soft);
+  font-weight: 600;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* Code blocks */
+pre, code {
+  font-family: var(--vp-font-family-mono);
+}
+
+/* Buttons */
+.vp-button {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Sidebar */
+.VPSidebar {
+  border-right: 1px solid var(--vp-c-border);
+}
+
+.VPSidebarItem.level-1 .text {
+  font-weight: 600;
+}
+
+/* Navbar */
+.VPNavBar {
+  backdrop-filter: blur(8px);
+  background-color: rgba(248, 249, 250, 0.8);
+}
+
+.dark .VPNavBar {
+  background-color: rgba(18, 18, 18, 0.8);
+}
+
+/* Home page features */
+.VPFeature {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--vp-c-bg-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vp-c-text-3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vp-c-text-2);
+}

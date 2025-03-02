@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Background -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a86ff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#8338ec" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3a86ff"/>
+      <stop offset="100%" stop-color="#8338ec"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="400" fill="url(#bg-gradient)" rx="20" ry="20"/>
+  
+  <!-- Network Diagram -->
+  <!-- Internet Cloud -->
+  <ellipse cx="400" cy="60" rx="80" ry="40" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="400" y="65" font-family="Arial" font-size="16" text-anchor="middle" fill="#2b2d42">Internet</text>
+  
+  <!-- Router -->
+  <rect x="370" y="120" width="60" height="40" rx="5" ry="5" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="400" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="#2b2d42">Router</text>
+  
+  <!-- Main Switch -->
+  <rect x="370" y="200" width="60" height="40" rx="5" ry="5" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="400" y="225" font-family="Arial" font-size="14" text-anchor="middle" fill="#2b2d42">Switch</text>
+  
+  <!-- Devices -->
+  <!-- Server -->
+  <rect x="200" y="280" width="60" height="40" rx="5" ry="5" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="230" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#2b2d42">Server</text>
+  
+  <!-- NAS -->
+  <rect x="300" y="280" width="60" height="40" rx="5" ry="5" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="330" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#2b2d42">NAS</text>
+  
+  <!-- Access Point -->
+  <rect x="400" y="280" width="60" height="40" rx="5" ry="5" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="430" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#2b2d42">AP</text>
+  
+  <!-- Smart Home -->
+  <rect x="500" y="280" width="60" height="40" rx="5" ry="5" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="530" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#2b2d42">IoT</text>
+  
+  <!-- PC -->
+  <rect x="600" y="280" width="60" height="40" rx="5" ry="5" fill="white" stroke="#3a86ff" stroke-width="2"/>
+  <text x="630" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#2b2d42">PC</text>
+  
+  <!-- Connection Lines -->
+  <!-- Internet to Router -->
+  <line x1="400" y1="100" x2="400" y2="120" stroke="url(#line-gradient)" stroke-width="3"/>
+  
+  <!-- Router to Switch -->
+  <line x1="400" y1="160" x2="400" y2="200" stroke="url(#line-gradient)" stroke-width="3"/>
+  
+  <!-- Switch to Devices -->
+  <line x1="400" y1="240" x2="230" y2="280" stroke="url(#line-gradient)" stroke-width="2"/>
+  <line x1="400" y1="240" x2="330" y2="280" stroke="url(#line-gradient)" stroke-width="2"/>
+  <line x1="400" y1="240" x2="430" y2="280" stroke="url(#line-gradient)" stroke-width="2"/>
+  <line x1="400" y1="240" x2="530" y2="280" stroke="url(#line-gradient)" stroke-width="2"/>
+  <line x1="400" y1="240" x2="630" y2="280" stroke="url(#line-gradient)" stroke-width="2"/>
+  
+  <!-- VLAN Labels -->
+  <rect x="170" y="330" width="120" height="25" rx="12.5" ry="12.5" fill="#3a86ff" fill-opacity="0.2" stroke="#3a86ff" stroke-width="1"/>
+  <text x="230" y="347" font-family="Arial" font-size="12" text-anchor="middle" fill="#2b2d42">VLAN 20: Servers</text>
+  
+  <rect x="300" y="330" width="120" height="25" rx="12.5" ry="12.5" fill="#8338ec" fill-opacity="0.2" stroke="#8338ec" stroke-width="1"/>
+  <text x="360" y="347" font-family="Arial" font-size="12" text-anchor="middle" fill="#2b2d42">VLAN 10: Management</text>
+  
+  <rect x="430" y="330" width="120" height="25" rx="12.5" ry="12.5" fill="#ff006e" fill-opacity="0.2" stroke="#ff006e" stroke-width="1"/>
+  <text x="490" y="347" font-family="Arial" font-size="12" text-anchor="middle" fill="#2b2d42">VLAN 30: IoT</text>
+  
+  <rect x="560" y="330" width="120" height="25" rx="12.5" ry="12.5" fill="#ffbe0b" fill-opacity="0.2" stroke="#ffbe0b" stroke-width="1"/>
+  <text x="620" y="347" font-family="Arial" font-size="12" text-anchor="middle" fill="#2b2d42">VLAN 40: Guest</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="150" cy="100" r="5" fill="#3a86ff" fill-opacity="0.5"/>
+  <circle cx="170" cy="120" r="3" fill="#8338ec" fill-opacity="0.5"/>
+  <circle cx="130" cy="140" r="7" fill="#ff006e" fill-opacity="0.5"/>
+  
+  <circle cx="650" cy="100" r="7" fill="#3a86ff" fill-opacity="0.5"/>
+  <circle cx="670" cy="120" r="4" fill="#8338ec" fill-opacity="0.5"/>
+  <circle cx="630" cy="140" r="5" fill="#ff006e" fill-opacity="0.5"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#2b2d42">Home Network Infrastructure</text>
+</svg>
