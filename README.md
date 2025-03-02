@@ -48,4 +48,14 @@ Access the application at http://localhost:5173.
 Build and Deploy
 npm run docs:build
 ```
+
+## Contributing
+
+Contribute to this wiki by adding new information or fixing errors. All contributions are welcome! 
+Please follow the steps below:
+- Fork the repository.
+- Create a new branch.
+- Add/edit the documentation.
+- Open a pull request.
+        
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/frozendark)
