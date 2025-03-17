@@ -3,7 +3,7 @@
 **HomeLabWiki** is a VitePress-based documentation platform designed to be a centralized knowledge base for your home lab setup, configurations, and troubleshooting guides.
 
 <p align="center">
-  <img src="capture.png" width="820" height="620" />
+  <img src="capture.png" />
 </p>
 
 ## Description
